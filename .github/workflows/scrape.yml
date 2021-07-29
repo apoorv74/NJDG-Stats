@@ -16,7 +16,7 @@ jobs:
       uses: actions/checkout@v2
     - name: Fetch latest data
       run: |-
-        curl 'https://njdg.ecourts.gov.in/njdgnew/index.php' | pup '.counter text{}' | xargs | tr -s [[:space:]] \\n | head -6 > cases.txt
+        curl 'https://njdg.ecourts.gov.in/njdgnew/index.php' | ~/go/bin/pup '.counter text{}' | xargs | tr -s [[:space:]] \\n | head -6 > cases.txt
     - name: Commit and push if it changed
       run: |-
         git config user.name "Automated"
