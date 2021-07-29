@@ -15,7 +15,7 @@ To capture the value of six counter widgets that are present on the NJDG dashboa
 
 ### Note
 
-- The numbers will be updated on a set frequency. Currently the script runs once a day to check if the numbers are updated on the NJDG portal.
+- The numbers will be updated on a set frequency. Currently the script runs twice a day to check if the numbers are updated on the NJDG portal.
 - The script only checks the numbers for the District Courts and not the High Courts. Though one can follow the exact same logic to capture those values as well.
 
 This work from inspired from [Simon Wilson's](https://github.com/simonw) post about `git-scraping`. You can read it [here](https://simonwillison.net/2020/Oct/9/git-scraping/)
