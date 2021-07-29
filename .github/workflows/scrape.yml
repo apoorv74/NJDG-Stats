@@ -10,6 +10,8 @@ jobs:
   scheduled:
     runs-on: ubuntu-latest
     steps:
+    - name: Install pup
+      run: sudo apt-get install pup
     - name: Check out this repo
       uses: actions/checkout@v2
     - name: Fetch latest data
